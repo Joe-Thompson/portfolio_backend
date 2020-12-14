@@ -1,0 +1,30 @@
+{
+  "name": "portfolio_backend",
+  "version": "1.0.0",
+  "description": "nodejs server for portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joe-Thompson/portfolio_backend.git"
+  },
+  "author": "Joe-Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joe-Thompson/portfolio_backend/issues"
+  },
+  "homepage": "https://github.com/Joe-Thompson/portfolio_backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "knex": "^0.21.13",
+    "mysql2": "^2.2.5"
+  }
+}
