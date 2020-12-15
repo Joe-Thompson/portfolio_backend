@@ -1,4 +1,4 @@
-const db = require('../Database/config');
+const db = require('../database/config');
 
 class base_model {
     constructor(table) {
@@ -12,7 +12,8 @@ class base_model {
     async insert(data) {
         try {
          let [id] = await db(this.table).insert(data);
-         return await this.find_by(id)
+         console.log(id)
+         return await this.find_by({id})
         } catch (e) {
             return e;
         }
