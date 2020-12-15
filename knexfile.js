@@ -11,7 +11,7 @@ module.exports = {
       database: 'portfolio'
     },
     migrations: {
-      directory: './Database/migrations'
+      directory: './database/migrations'
     }
   },
 
