@@ -43,6 +43,9 @@ module.exports = {
       password: process.env.PASSWORD
     },
     useNullAsDefault: true,
+    ssl: {
+      rejectUnauthorized: false
+    },
     migrations: {
       directory: './database/migrations'
     }
