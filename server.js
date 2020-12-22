@@ -23,6 +23,7 @@ server.use('/', (err, req, res, next) => {
    res.status(500).json({
        error_message: `Error: ${err}`
    });
+   next()
 });
 
 server.listen(PORT, () => {
