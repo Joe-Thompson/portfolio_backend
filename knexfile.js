@@ -16,9 +16,29 @@ module.exports = {
     }
   },
 
+  staging: {
+    client: 'postgresql',
+    connection: {
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
+    }
+  },
+
   production: {
     client: 'pg',
-    connection: 'postgres://kcqhiafwbqiara:1b17470842b5cfb9306b2160aabe096215d3b0db7489c7d8cc085ee56930cb52@ec2-54-163-215-125.compute-1.amazonaws.com:5432/d1l4dmtdo4ggqp',
+    connection: {
+      database: "d1l4dmtdo4ggqp",
+      user:     "kcqhiafwbqiara",
+      password: "1b17470842b5cfb9306b2160aabe096215d3b0db7489c7d8cc085ee56930cb52"
+    },
     migrations: {
       directory: './database/migrations'
     }
