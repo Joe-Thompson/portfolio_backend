@@ -3,7 +3,7 @@ const { Message } = require('../models/base_model');
 
 const router = express.Router();
 
-router.post('/', async (req, res, next) => {
+router.post('/new_message', async (req, res, next) => {
    try {
         const data = {
             email: req.body.email,
