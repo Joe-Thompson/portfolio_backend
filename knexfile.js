@@ -4,13 +4,14 @@ require("dotenv").config();
 module.exports = {
 
   development: {
-    client: 'mysql2',
+    client: 'pg',
     connection: {
       host: '127.0.0.1',
-      user: 'root',
-      password: 'Tawne0212!',
+      user: 'joe',
+      password: '123',
       database: 'portfolio'
     },
+    useNullAsDefault: true,
     migrations: {
       directory: './database/migrations'
     }
@@ -34,7 +35,13 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: process.env.DATABASE_URL,
+    connection: {
+      host: process.env.HOST,
+      user: process.env.USER,
+      port: process.env.PORT,
+      database: process.env.DATABASE,
+      password: process.env.PASSWORD
+    },
     useNullAsDefault: true,
     migrations: {
       directory: './database/migrations'
