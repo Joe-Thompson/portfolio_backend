@@ -39,8 +39,7 @@ module.exports = {
       database: "du47n12bsumd5",
       user: "bwlvlrdsgrvzai",
       port: "5432",
-      password: "caae7f88489b3725cacdc3c2faa5fa541234f90476b1232eaf859f01d2504a66",
-      ssl: true
+      password: "caae7f88489b3725cacdc3c2faa5fa541234f90476b1232eaf859f01d2504a66"
     },
     useNullAsDefault: true,
     migrations: {
