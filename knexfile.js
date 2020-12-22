@@ -34,11 +34,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: {
-      database: "du47n12bsumd5",
-      user:     "bwlvlrdsgrvzai",
-      password: "caae7f88489b3725cacdc3c2faa5fa541234f90476b1232eaf859f01d2504a66"
-    },
+    connection: "    postgres://bwlvlrdsgrvzai:caae7f88489b3725cacdc3c2faa5fa541234f90476b1232eaf859f01d2504a66@ec2-3-211-167-220.compute-1.amazonaws.com:5432/du47n12bsumd5",
     useNullAsDefault: true,
     migrations: {
       directory: './database/migrations'
